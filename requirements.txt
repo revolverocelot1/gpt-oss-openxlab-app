@@ -1,6 +1,6 @@
 fastapi==0.111.0
 uvicorn==0.30.6
-gradio==5.21.0
+gradio==4.14.0
 transformers==4.49.0
 accelerate==1.4.0
 safetensors==0.4.5
