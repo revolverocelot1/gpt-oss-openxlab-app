@@ -4,12 +4,12 @@ gradio==4.14.0
 transformers==4.38.2
 accelerate==0.28.0
 safetensors==0.4.2
-numpy==2.0.2
+numpy==1.26.4
 Pillow==10.4.0
 huggingface_hub==0.24.6
 pydantic==2.10.6
 autoawq==0.2.3
 auto-gptq==0.5.1
-bitsandbytes==0.43.0
+bitsandbytes==0.41.3
 modelscope==1.18.1
 
