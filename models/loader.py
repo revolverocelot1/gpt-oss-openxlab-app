@@ -171,8 +171,8 @@ def load_chat_model() -> Tuple[ChatSession, ModelInfo]:
         if tok.pad_token_id is None and tok.eos_token_id is not None:
             tok.pad_token_id = tok.eos_token_id
 
-        # Default quantization preference: bnb4 for 20B class on A10
-        quant_type = os.getenv("QUANT_TYPE", "bnb4").lower()
+        # Default to auto-detect available quant backend
+        quant_type = os.getenv("QUANT_TYPE", "auto").lower()
         mdl: Any = None
 
         if mdl is None and quant_type in ("awq", "auto", "bnb4-first") and AWQ_AVAILABLE:
